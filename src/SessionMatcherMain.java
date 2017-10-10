@@ -12,8 +12,6 @@ public class SessionMatcherMain {
     private static List<String> peopleAlreadyReassignedOnce = new ArrayList<>();
 
     static {
-        peopleAlreadyReassignedOnce.add("Ethan");
-        peopleAlreadyReassignedOnce.add("Will");
     }
 
     public static void main(String[] args) {
@@ -115,7 +113,7 @@ public class SessionMatcherMain {
             }
         }
         if (numReassignmentsNeeded > 0) {
-            throw new ReassignmentFailureException("There weren't enough people to reassign who hadn't already been " +
+            throw new ReassignmentFailureException("There are not enough people to reassign who haven't already been " +
                     "reassigned before");
         }
     }
