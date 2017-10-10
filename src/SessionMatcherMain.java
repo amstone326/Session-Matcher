@@ -115,7 +115,7 @@ public class SessionMatcherMain {
         }
         if (numReassignmentsNeeded > 0) {
             throw new ReassignmentFailureException("There are not enough people to reassign who haven't already been " +
-                    "reassigned before");
+                    "reassigned before. Number of reassignments still needed: " + numReassignmentsNeeded);
         }
     }
 
