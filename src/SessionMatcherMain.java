@@ -31,10 +31,11 @@ public class SessionMatcherMain {
 
         try {
             adjustAssignmentsBasedOnNumbers(sessionNamesToAssignments, parsedPreferences);
-            printAssignments(sessionNamesToAssignments);
         } catch (ReassignmentFailureException e) {
             System.out.println("MATCHING FAILED: " + e.getMessage());
         }
+
+        printAssignments(sessionNamesToAssignments);
     }
 
     private static void createFirstChoiceMatches(Map<String, Match> sessionNamesToAssignments,
